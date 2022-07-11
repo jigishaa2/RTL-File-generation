@@ -232,7 +232,7 @@ filelist1 = []
 copyfiles(mypath, mypath, justpath, filelist, filelist1)
 
 #breakpoint()
-fileobject = open("RTL/All_RTL/RTLFiles.txt","w+") 
+fileobject = open("RTL/All_RTL/RTLFiles.txt", "w+")
 fileobject.writelines(filelist)
 fileobject.close()
 
@@ -263,13 +263,13 @@ for i, items in enumerate(filelist1):
 
 #breakpoint()
 #moduleconnection = []
-with open('spec.txt') as fl:
-    linespecs = fl.readlines()
-    for linespe in linespecs:
-        linespec = ''.join(linespe.replace('\n',''))
+# with open('spec.txt') as fl:
+#     linespecs = fl.readlines()
+#     for linespe in linespecs:
+#         linespec = ''.join(linespe.replace('\n',''))
 breakpoint()
 Allconnection = []
-fileobject = open("RTL/All_RTL/moduleconnection.txt","w+")
+fileobject = open("RTL/rtl2/All_RTL/moduleconnection.txt", "w+")
 for i, items in enumerate(filelist1):
     modulelist2 = []
     modulelist3 = modulelist
@@ -397,7 +397,7 @@ fl.close()
 
 IPO = moduleo
 
-with open("RTL/All_RTL/moduleconnection.txt") as fl1:
+with open("RTL/rtl2/All_RTL/moduleconnection.txt") as fl1:
     linex = fl1.readlines()
 fl1.close()
 
